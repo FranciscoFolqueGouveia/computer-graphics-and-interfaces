@@ -1,11 +1,11 @@
-import { buildProgramFromSources, loadShadersFromURLS, setupWebGL } from "../../libs/utils.js";
-import { ortho, lookAt, flatten, scale, rotate, inverse, normalMatrix, mult, vec4 } from "../../libs/MV.js";
-import {modelView, loadMatrix, multMatrix, multRotationY, multScale, multTranslation, pushMatrix, popMatrix, multRotationZ, multRotationX} from "../../libs/stack.js";
+import { buildProgramFromSources, loadShadersFromURLS, setupWebGL } from "./libs/utils.js";
+import { ortho, lookAt, flatten, scale, rotate, inverse, normalMatrix, mult, vec4 } from "./libs/MV.js";
+import {modelView, loadMatrix, multMatrix, multRotationY, multScale, multTranslation, pushMatrix, popMatrix, multRotationZ, multRotationX} from "./libs/stack.js";
 
-import * as CUBE from '../../libs/cube.js';
-import * as SPHERE from '../../libs/sphere.js';
-import * as CYLINDER from '../../libs/cylinder.js';
-import * as TORUS from '../../libs/torus.js';
+import * as CUBE from './libs/cube.js';
+import * as SPHERE from './libs/sphere.js';
+import * as CYLINDER from './libs/cylinder.js';
+import * as TORUS from './libs/torus.js';
 
 /** @type WebGLRenderingContext */
 let gl;
@@ -20,8 +20,8 @@ let wc;
 let shoots = [];
 let matrix;
 
-let view = lookAt([0, 3, 0], [0, 0, 0], [1, 0, 0]);
-let VP_DISTANCE = 5;
+let view = lookAt([3, 3, 3], [0, 0, 0], [0, 1, 0]);
+let VP_DISTANCE = 10;
 
 //camara
 const CAMARA_IN_OUT = 0.5;
