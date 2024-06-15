@@ -1,12 +1,48 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="styles.css">
-        <script type="module" src="./app.js"></script>
-    </head>
-    <body>
-        <canvas id="gl-canvas" width="128" height="128">
-            Oops! Something went wrong!
-        </canvas>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eletric Fields</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        canvas {
+            display: block;
+            border: 1px solid #ccc; /* Para visualizar o canvas */
+        }
+        #commands {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: white;
+            font-family: Arial, sans-serif;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 5px;
+            z-index: 1; /* Garante que o div de comandos esteja acima do canvas */
+        }
+    </style>
+</head>
+<body>
+    <canvas id="gl-canvas" width="128" height="128">
+        Oops! Something went wrong!
+    </canvas>
+    <div id="commands">
+        <h2>Commands:</h2>
+        <ul>
+            <li><strong>Shift + Click:</strong> Add negative charge.</li>
+            <li><strong>Click:</strong> Add positive charge.</li>
+            <li><strong>Space Bar:</strong> Toggle charge display.</li>
+        </ul>
+    </div>
+    <script type="module" src="./app.js"></script>
+</body>
 </html>
