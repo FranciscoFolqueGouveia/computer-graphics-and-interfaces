@@ -131,7 +131,7 @@ const GUN_TIP_SCALE = GUN_WIDTH * 1.2;
 
 //projectil
 const PROJECTIL_RADIUS = (GUN_WIDTH ) * 0.9;
-const SPEED = vec4(0.0, -3.0, 0.0, 0.0);
+const SPEED = vec4(0.0, -10.0, 0.0, 0.0);
 const HOMO_COORD = [0, 0, 0, 1];
 
 
