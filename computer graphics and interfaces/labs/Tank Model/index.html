@@ -1,13 +1,75 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="styles.css">
-        <title>Tank Project</title>
-        <script type="module" src="./app.js"></script>
-    </head>
-    <body>
-        <canvas id="gl-canvas" width="128" height="128">
-            Oops! Something went wrong!
-        </canvas>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tank Model</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        canvas {
+            display: block;
+            border: 1px solid #ccc;
+        }
+        #commands {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: white;
+            font-family: Arial, sans-serif;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 5px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="gl-canvas" width="128" height="128">
+        Oops! Something went wrong!
+    </canvas>
+    <div id="commands">
+        <div>
+            <h2>Camera:</h2>
+            <ul>
+                <li><strong>1:</strong> Set view 1.</li>
+                <li><strong>2:</strong> Set view 2.</li>
+                <li><strong>3:</strong> Set view 3.</li>
+                <li><strong>4:</strong> Set view 4.</li>
+                <li><strong>+</strong> Zoom in.</li>
+                <li><strong>-</strong> Zoom out.</li>
+            </ul>
+        </div>
+        <div>
+            <h2>Movement:</h2>
+            <ul>
+                <li><strong>ArrowUp:</strong> Move tank forward.</li>
+                <li><strong>ArrowDown:</strong> Move tank backward.</li>
+                <li><strong>A:</strong> Move top body left.</li>
+                <li><strong>D:</strong> Move top body right.</li>
+            </ul>
+        </div>
+        <div>
+            <h2>Weapon:</h2>
+            <ul>
+                <li><strong>W:</strong> Increase gun movement.</li>
+                <li><strong>S:</strong> Decrease gun movement.</li>
+                <li><strong>Space:</strong> Shoot.</li>
+            </ul>
+            <h2>View:</h2>
+            <ul>
+                <li><strong>Caps-lock + W:</strong> Switch to Lines mode.</li>
+                <li><strong>Caps-lock + S:</strong> Switch to Object mode.</li>
+            </ul>
+        </div>
+    </div>
+    <script type="module" src="./app.js"></script>
+</body>
 </html>
