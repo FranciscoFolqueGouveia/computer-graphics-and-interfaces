@@ -27,8 +27,8 @@ let VP_DISTANCE = 10;
 const CAMARA_IN_OUT = 0.5;
 
 //floor
-let floor_color1 = [0.320, 0.282, 0.144, 1.0];
-let floor_color2 = [0.570, 0.491, 0.205, 1.0]
+let floor_color1 = [1.0, 1.0, 1.0, 1.0];
+let floor_color2 = [0.8, 0.8, 0.8, 1.0];
 
 
 //largura de cada cubo do chao
