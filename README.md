@@ -1,10 +1,10 @@
 # computer-graphics-and-interfaces
 
-This are JavaScript projects I've done in college, for the 'computer-graphics-and-interfaces' discipline. I've done this projects in Visual Studio Code.
+This are JavaScript projects I completed in college for the 'Computer Graphics and Interfaces' course.
 
-The folder 'libs' was provided by the teachers of the discipline.
+The 'libs' folder included in the project was provided by the course instructors.
 
-## projects
+## Run Projects
 
 - **EletricFields Project**: [https://franciscofolquegouveia.github.io/computer-graphics-and-interfaces/computer%20graphics%20and%20interfaces/labs/Eletric%20Fields/](https://franciscofolquegouveia.github.io/computer-graphics-and-interfaces/computer%20graphics%20and%20interfaces/labs/Eletric%20Fields/)
 
